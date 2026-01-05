@@ -1,16 +1,16 @@
-% GitHub Repo and Documentation: https://github.com/celiobjunior/resume-template
-% Copyright © 2025 Celio B Junior. All rights reserved.
+% Repositório GitHub e Documentação: https://github.com/celiobjunior/resume-template
+% Copyright © 2025 Celio B Junior. Todos os direitos reservados.
 % 
-% Licensed under the Apache License, Version 2.0 (the "License");
-% you may not use this file except in compliance with the License.
-% You may obtain a copy of the License at
+% Licenciado sob a Licença Apache, Versão 2.0 (a "Licença");
+% você não pode usar este arquivo exceto em conformidade com a Licença.
+% Você pode obter uma cópia da Licença em
 %
 %     http://www.apache.org/licenses/LICENSE-2.0
 %
-% This template follows best practices from README.md
+% Este template segue as melhores práticas descritas no README.md
 
-% Início do documento LaTeX: define tipo e formato do documento
-% a4paper = tamanho A4, 10pt = tamanho base da fonte
+% Início do documento LaTeX: define o tipo e formato do documento
+% a4paper = tamanho de página A4, 10pt = tamanho base da fonte
 \documentclass[a4paper,10pt]{article}
 
 % --- PACOTES ---
@@ -21,20 +21,20 @@
 \usepackage{parskip}
 \usepackage{hyperref}
 \usepackage{titlesec}
-% Para quebras de linha em URLs longas (não use \href{}, use \url{} para URLs longas)
+% Para melhor quebra de linha em URLs longas (não use \href{}, use \url{})
 % \usepackage{xurl}
 
 % --- CONFIGURAÇÃO DO DOCUMENTO ---
-% Define margens da página para maximizar espaço de conteúdo
+% Define as margens da página para maximizar o espaço de conteúdo
 \geometry{top=1.0cm, bottom=1.0cm, left=1.0cm, right=1.0cm}
 
-% Remove números de página e cabeçalhos para visual limpo do currículo
+% Remove numeração de páginas e cabeçalhos para visual limpo de currículo
 \pagestyle{empty}
 
 % Metadados do PDF - personalize com suas informações
 \hypersetup{
-    pdftitle={CV Seu Nome},
-    pdfauthor={Seu Nome},
+    pdftitle={João Alberto},
+    pdfauthor={João Alberto},
     colorlinks=true,
     linkcolor=black,
     urlcolor=black,
@@ -42,10 +42,10 @@
     bookmarksdepth=1 
 }
 
-% Desabilita numeração das sections
+% Desabilita numeração de seções para aparência mais limpa
 \setcounter{secnumdepth}{0}
 
-% Formata os cabeçalhos de cada section e coloca uma linha em baixo
+% Formata os títulos das seções com texto em negrito e sublinhado
 \titleformat{\section}
 {\Large\bfseries}
 {}
@@ -57,101 +57,119 @@
 \begin{document}
 
 % --- CABEÇALHO ---
-% Substitua com suas informações pessoais
 \begin{center}
-    {\LARGE \textbf{Nome Completo}} 
+    {\LARGE \textbf{João Alberto}} 
     \\ [0.1cm]
-    Cidade, Estado
+    Engenheiro Front-End Sênior
+    \\ [0.1cm]
+    Email: \href{mailto:joaoalberto.contato@gmail.com}{joaoalberto.contato@gmail.com} 
     {\textbullet}
-    Email: \href{mailto:seu.email@exemplo.com}{seu.email@exemplo.com} 
+    \href{https://www.linkedin.com/in/joao-alberto-mo}{linkedin.com/in/joao-alberto-mo} 
     {\textbullet}
-    \href{https://www.linkedin.com/in/usuario}{linkedin.com/in/usuario} 
-    {\textbullet}
-    \href{https://github.com/usuario}{github.com/usuario}
+    \href{https://joaoalberto.dev}{joaoalberto.dev}
 \end{center}
 
 % --- SEÇÕES ---
 
-\section{Atividades de Liderança} 
-    % Inclua trabalho voluntário, ligas acadêmicas ou cargos de liderança
-    \subsection*{\texorpdfstring{
-            \textbf{Nome da Empresa/Organização} \hfill Localização (ex: Remoto ou Estado, País)
-        }{
-            Nome da Empresa (Liderança) -- Localização
-        }}
-    \textit{Seu Cargo/Posição \hfill Data de Início - Data de Término (ex: Jan 2024 - Atual)}
-        \begin{itemize}
-            % Use verbos de ação do README - quantifique seu impacto quando possível
-            \item Descreva uma conquista significativa de liderança com métricas específicas.
-            \item Destaque como você gerenciou equipes, liderou iniciativas ou impulsionou resultados.
-            \item Mostre impacto na organização ou comunidade que você serviu.
-        \end{itemize}
-
-% ------
-
 \section{Experiência}
-    % Liste as suas experiência de trabalho ou acadêmicas, mais recente primeiro
     \subsection*{\texorpdfstring{
-            \textbf{Nome da Empresa/Organização} \hfill Localização (ex: Remoto ou Estado, País)
+            \textbf{Zé Delivery} \hfill Rio Negro, BR -- Remoto
         }{
-            Nome da Empresa -- Localização
+            Zé Delivery -- Rio Negro, BR
         }}
-    \textit{Cargo (ex: Engenheiro de Software, Analista de Dados) \hfill Data de Início - Data de Término}
+    \textit{Engenheiro de Software Sênior \hfill Maio 2025 -- Atual}
         \begin{itemize} 
-            % Foque em conquistas, não apenas na parte técnica - use o método STAR (Situação, Tarefa, Ação, Resultado)
-            \item Alcancei [resultado específico] através de [ação tomada], resultando em [impacto quantificado].
-            \item Desenvolvi/Construí/Criei [o que você fez] usando [tecnologias/métodos], resultando em [benefício].
-            \item Colaborei com [tamanho/tipo da equipe] para [alcançar o quê], melhorando [métrica] em [porcentagem/quantidade].
+            \item Arquitetura de aplicações front-end garantindo escalabilidade e manutenibilidade.
+            \item Mentoria de engenheiros menos experientes, promovendo crescimento do time e boas práticas.
+            \item Melhoria de ferramentas internas, incluindo pipelines de CI/CD e estratégias de testes.
         \end{itemize}
 
     \subsection*{\texorpdfstring{
-        	\textbf{Nome da Empresa/Organização} \hfill Localização (ex: Remoto ou Estado, País)
+        	\textbf{Fluency Academy} \hfill Rio Negro, BR -- Remoto
         }{
-            Nome da Empresa -- Localização
+            Fluency Academy -- Rio Negro, BR
         }}
-    \textit{Cargo (ex: Desenvolvedor Júnior, Assistente de Pesquisa) \hfill Data de Início - Data de Término}
+    \textit{Líder de Front-End \hfill Mar 2022 -- Maio 2025}
         \begin{itemize}
-            \item Use verbos ativos da tabela de verbos de ação no README.md
-            \item Quantifique suas conquistas sempre que possível (números, porcentagens, prazos)
-            \item Mostre progressão e responsabilidade crescente entre os cargos
+            \item Liderança de um time front-end com 4 engenheiros, conduzindo decisões técnicas e qualidade de código.
+            \item Desenvolvimento de uma plataforma de videochamada utilizando WebRTC, atendendo mais de 70.000 usuários mensais.
+            \item Implementação de novos pipelines de CI/CD para projetos front-end, reduzindo o tempo de deploy em mais de 50\%.
+            \item Melhoria da pontuação geral do Lighthouse do LMS interno de 30 para mais de 80 pontos.
         \end{itemize}
         
     \subsection*{\texorpdfstring{
-        	\textbf{Universidade/Instituição de Pesquisa} \hfill Localização (ex: Remoto ou Estado, País)
+        	\textbf{Pixelwolf} \hfill Curitiba, BR -- Remoto
         }{
-            Universidade/Instituição de Pesquisa -- Localização
+            Pixelwolf -- Curitiba, BR
         }}
-    \textit{Função (ex: Pesquisador de Graduação, Monitor) \hfill Data de Início - Data de Término}
+    \textit{Líder de Front-End \hfill Mar 2020 -- Mar 2022}
         \begin{itemize}
-            \item Inclua pesquisa, trabalho acadêmico ou projetos que demonstrem habilidades técnicas
-            \item Destaque publicações, apresentações ou descobertas significativas
+            \item Liderança de um time front-end com 5 engenheiros, estabelecendo padrões e fluxos de desenvolvimento.
+            \item Criação de infraestrutura de ferramentas que permanece em uso até hoje.
+            \item Mentoria de 2 engenheiros front-end, acelerando seu desenvolvimento profissional.
+        \end{itemize}
+
+    \subsection*{\texorpdfstring{
+        	\textbf{CriticaMass} \hfill Curitiba, BR -- Remoto
+        }{
+            CriticaMass -- Curitiba, BR
+        }}
+    \textit{Engenheiro Full Stack \hfill Out 2017 -- Nov 2020}
+        \begin{itemize}
+            \item Escala da base de usuários de 20.000 para 400.000 usuários por meio de otimizações de performance.
+            \item Migração de componentes de JavaScript para Native (Java/Obj-C), melhorando a performance geral em 40\%.
+            \item Reescrita do sistema de notificações para suportar mais de 100.000 notificações diárias.
+        \end{itemize}
+
+    \subsection*{\texorpdfstring{
+        	\textbf{MadeiraMadeira} \hfill Curitiba, BR
+        }{
+            MadeiraMadeira -- Curitiba, BR
+        }}
+    \textit{Desenvolvedor Front-End Sênior \hfill Jul 2019 -- Dez 2019}
+        \begin{itemize}
+            \item Desenvolvimento de um novo chat de suporte em tempo real do zero, atendendo mais de 4.000 contatos por dia.
+            \item Melhoria do processo de contratação de desenvolvedores front-end, aprimorando a avaliação de candidatos.
+        \end{itemize}
+
+    \subsection*{\texorpdfstring{
+        	\textbf{Personaliza | Marketing e Tecnologia} \hfill Curitiba, BR
+        }{
+            Personaliza -- Curitiba, BR
+        }}
+    \textit{Desenvolvedor Front-End \hfill Jul 2015 -- Jul 2017}
+        \begin{itemize}
+            \item Desenvolvimento de novas funcionalidades para um sistema ERP interno, melhorando fluxos de negócio.
+            \item Migração de sistemas legados para Angular, modernizando a stack tecnológica.
+        \end{itemize}
+
+    \subsection*{\texorpdfstring{
+        	\textbf{Volts Digital} \hfill Curitiba, BR
+        }{
+            Volts Digital -- Curitiba, BR
+        }}
+    \textit{Desenvolvedor Front-End \hfill Fev 2014 -- Jul 2014}
+        \begin{itemize}
+            \item Desenvolvimento do front-end para a organização sem fins lucrativos Omunga.
+            \item Desenvolvimento do front-end para a imobiliária CR Fernandes.
         \end{itemize}
 
 % ------
 
 \section{Habilidades}
-    % Mantenha esta seção concisa e use o máximo de palavras chaves
-    % que fazem sentido para a vaga que você deseja.
     \begin{itemize}
-        \item \textbf{Técnicas:} Liste suas linguagens de programação, frameworks, ferramentas e metodologias
-        \item \textbf{Idiomas:} Português (Nativo), Inglês (Nível de Proficiência), Terceiro Idioma (Nível de Proficiência)
+        \item \textbf{Avançado:} HTML, CSS, JavaScript, React, React Native, Next.js, TypeScript, Observabilidade, Testes, CI/CD, Mentoria, Arquitetura, Performance, Node.js, AWS (S3, CloudFront, Amplify, Cognito, Route 53)
+        \item \textbf{Intermediário:} Liderança, Python, FastAPI, SQL, IaC (Terraform), Docker, AWS (EC2, ECS, Fargate, SQS, SNS)
+        \item \textbf{Idiomas:} Português (Nativo), Inglês (Fluente)
     \end{itemize}
 
-% ------
-
-% !!!!!!!!!!!!!!!!!!!!!!
-% Mude esta section para o começo, depois do header e antes
-% das suas experiências se você está procurando sua primeira
-% vaga ou algum estágio. Do contrário, deixe como está.
-% !!!!!!!!!!!!!!!!!!!!!!
-
-\section{Educação}
+\section{Formação}
     % Formação mais recente primeiro
     \subsection*{\texorpdfstring{
-            \textbf{Nome da Sua Universidade} \hfill Localização (ex: Remoto ou Estado, País)
+            \textbf{Universidade do Contestado} \hfill Rio Negro, PR, Brasil
         }{
-            Nome da Sua Universidade (Educação) -- Localização
+            Universidade do Contestado -- Rio Negro, PR, Brasil
         }}
-    \textit{Título do Seu Curso (ex: Bacharelado em Ciência da Computação) \hfill Data de Início - Data de Término (ex: Jan 2020 - Dez 2024)}
+    \textit{Bacharelado em Sistemas de Informação \hfill Jan 2010 -- Dez 2014}
 
 \end{document}
