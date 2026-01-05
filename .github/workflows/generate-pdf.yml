@@ -15,5 +15,11 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: |
-            resumes/en/resume.tex
-            resumes/pt-br/curriculo.tex
+            resumes/en/joao-alberto-en.tex
+            resumes/pt-br/joao-alberto-ptbr.tex
+      
+      - name: Upload PDFs to GitHub
+        uses: actions/upload-artifact@v5
+        with:
+          name: resumes
+          path: resumes
