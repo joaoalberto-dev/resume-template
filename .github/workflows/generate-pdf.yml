@@ -1,0 +1,19 @@
+name: Generate PDF from LaTeX
+
+on:
+  push:
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX resumes
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            resumes/en/resume.tex
+            resumes/pt-br/curriculo.tex
