@@ -28,6 +28,9 @@ A: While possible, it's not recommended as formatting may break. LaTeX produces 
 **Q: How do I add new sections?**  
 A: Copy the section structure and modify.
 
+**Q: How do I generate the PDFs of my resumes?**
+A: For each push an worflow will generate new PDFs with the latest changes.
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
